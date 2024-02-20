@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        main {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: white;
+            
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(3, 154, 154, 0.689);
+            margin: 0px;
+        }
+        
+        header {
+            background-color: white;
+            padding: 5px;
+            margin: 0px;
+        }
+        
+
+        section {
+            border-radius: 2px;
+        
+        
+        }
+        header > h1 { 
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.238);
+        }
+        nav {
+            background-color: rgb(0, 162, 162);
+            padding: 3px;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            box-shadow:2px 2px 2px rgba(0, 0, 0, 0.447)
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight:bold;
+
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            align-items: center;
+            background-color: rgba(0, 126, 126, 0.606);
+        }
+
+        footer {
+            color: white;
+            background-color: black;
+            padding: 6px;
+            text-align: center;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.346);
+        }
+
+        footer > p {
+            margin: 0px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site Pocotom.Beerre</h1>
+        <nav>
+            <a href="#">Youtube</a>
+            <a href="#">TikTok</a>
+            <a href="#">GitHub</a>
+            <a href="#">Linkedin</a>
+        </nav>
+    </header>
+    <main> 
+        <section>
+            <p><strong>A Demanda Sobre Tecnologia</strong></p>
+        </section>
+        <section>
+            <article>
+                <h2>Notícia sobre as Novas Tecnologias do Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem obcaecati repellat, sit maiores totam quos expedita nihil consequuntur corrupti saepe veniam rem ullam natus unde minima cupiditate dolores distinctio in.</p>
+                <aside>
+                    <p><strong>Artigo escrito por: Gustavo Guanabara</strong></p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Adriano</p>
+    </footer>
+</body>
+</html>

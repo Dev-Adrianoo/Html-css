@@ -1,0 +1,32 @@
+@charset
+
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.756) , rgb(172, 98, 172));
+  }
+
+  main {
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 119, 0.325);
+    width: 600px;
+    padding: 10px;
+  }
+
+h1 {
+    color: violet;
+    text-align: center;
+    text-shadow: rgba(82, 44, 82, 0.479));
+}
+
+h2 {
+    color: blue;
+}
+
+p {
+    text-align: justify;
+}
