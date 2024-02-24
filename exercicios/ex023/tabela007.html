@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            padding: 10px;
+            width: 500px;
+        }
+
+
+        thead {
+            font-weight: bold;
+            color: white;
+            background-color: gray;
+            text-align: center;
+        }
+
+        th, td{
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+
+        .cor {
+            background-color: gray;
+            color: white;
+        }
+
+        .position {
+            text-align: center;
+        }
+
+        #cor2 {
+            background-color: gray;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th scope="colgroup" rowspan="2">Área</th>
+                <td rowspan="2">Disciplina</td>
+                <td colspan="2">Notas</td>
+                <td scope="colgroup" rowspan="2">Média</td>
+            <tr>
+                <th scope="colgroup">Nota 1</th>
+                <td scope="colgroup">Nota 2</td>
+            </tr>
+        </thead>
+                <tbody>
+                <tr>
+                    <th scope="col" rowspan="4">Exatas</th>
+                    <td scope="rowgroup">Matemática</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                </tr>
+                <tr>
+                    <td scope="rowgroup">Física</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                </tr>
+                <tr>
+                    <td scope="rowgroup">Química</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                </tr>
+                <tr>
+                    <td scope="rowgroup">Biologia</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                </tr>
+                <tr>
+                    <td class="cor" colspan="4">Média De Exatas</td>
+                    <td class="position" id="cor2">10.0</td>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Humanas</th>
+                    <td scope="rowgroup">História</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                <tr>
+                <tr>
+                    <td scope="rowgroup">Geografia</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                    <td class="position">10.0</td>
+                </tr>
+                    <td class="cor" colspan="4">Média De Humanas</td>
+                    <td class="position" id="cor2">10.0</td>
+                </tr>
+                </tbody>
+
+    </table>
+</body>
+</html>
