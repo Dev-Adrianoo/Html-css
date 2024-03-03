@@ -6,16 +6,40 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Exemplo De Formulário</h1>
+    <h1 draggable="true">Exemplo De Formulário</h1>
     
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
         <p>
             <label for="iest">Estado:</label>
             <select name="estado" id="iestado">
 
             <option value="" selected>--- Escolha ---</option>
+
+            <optgroup label="Região Norte">
+                <option value="AM">Amazonas</option>
+                <option value="PA">Pará</option>
+                <option value="RR">Roraima</option>
+                <option value="Amapá ">Amapá</option>
+                <option value="RO">Rondônia</option>
+                <option value="AC">Acre</option>
+                <option value="TO">Tocantins</option>
+            </optgroup>
+
+            <optgroup label="Região Centro-Oeste">
+                <option value="GO">Goiás</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso Do Sul</option>
+            </optgroup>
+            
+            <optgroup label="Região Sul">
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande Do Sul</option>
+            </optgroup>
+
             <optgroup label="Região Sudeste">
+                <option value="ES">Espirito Santo</option>
                 <option value="MG">Minas Gerais</option>
                 <option value="RJ">Rio De Janeiro</option>
                 <option value="SP">São Paulo</option>
@@ -30,8 +54,8 @@
         </p>
 
         <p>
-            <label for="iprofissao">Profissão:</label>
-            <input type="text" name="proffisao" id="iprofissao" list="lstprof">
+            <label for="iprofissao"  >Profissão:</label>
+            <input type="text" name="proffisao" id="iprofissao" list="lstprof" placeholder="Digite Sua Profissão" required>
             <datalist id="lstprof" >
                 <option value="ADM">Administrador</option>
                 <option value="CONT">Contabilista</option>
@@ -39,10 +63,13 @@
                 <option value="PROF">Professor</option>
             </datalist>
         </p>
-
+        <p>
+            <label for="ifoto">Foto</label>
+            <input type="file" name="foto" id="ifoto" required>
+        </p>
         <p>
             <label for="imsg"> Mensagem: </label> <br>
-            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <textarea style="resize: none;" name="msg" id="imsg" cols="30" rows="10" placeholder="Diga no que podemos melhorar:"></textarea>
         </p>
 
         <p>
@@ -52,3 +79,6 @@
     </form>
 </body>
 </html>
+
+<!--OBS: Ao usar dataList certificar de colocar um Id e a cima ter colocado o mesmo nome do input-->
+<!--Podemos usar o atributo Style="resize:none" para evitar que o usuário altere o tamanho do text AREA-->
