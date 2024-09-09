@@ -61,7 +61,7 @@ grandes Telas: acima de 1200px
     }
 
     main::after {
-        content: 'Essa impressão foi feita atráves do Adriano';
+        content: 'Essa impressão foi feita atráves do Estudante:  Adriano Souza';
         text-decoration: overline;
     }
 
